@@ -1,0 +1,42 @@
+/* src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles (recommended to use @layer) */
+@layer components {
+
+    /* figtree-500 - latin */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 500;
+        src: url('../assets/fonts/Figtree-SemiBold.ttf') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+
+    /* figtree-800 - latin */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 800;
+        src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+
+    .font-figtree {
+        font-family: 'Figtree', sans-serif;
+    }
+
+    .fw-500 {
+        font-weight: 500;
+    }
+
+    .fw-800 {
+        font-weight: 800;
+    }
+}
